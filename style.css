@@ -14,9 +14,11 @@ h2{
     
 }
 
+
+
 /* For Laptops */
 
-@media (min-width: 800px){
+@media (max-width: 1440px){
 
     .container{
         background-color: white;
@@ -52,6 +54,10 @@ h2{
         top: 50px;
         left: -50px;
         width: 360px;
+    }
+
+    .mobile{
+        display: none;
     }
     /* FAQ side (right) */
     
@@ -102,4 +108,63 @@ h2{
         transform: rotate(180deg);
     }
 }
+
+/* For Mobile */
+
+@media only screen and (max-width: 400px){
+
+    .container{
+        margin-top: 100px;
+        background-color: white;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        border-radius: 25px;
+        align-items: center;
+    }
+
+    
+    /* Graphic side (top) */
+    
+    .graphic{
+        background: url(./images/bg-pattern-mobile.svg)  center calc(50% - 50px) no-repeat;
+        background-size: 230px;
+        /* height: 196px; */
+        width: 266px;
+        overflow: visible;
+        position: absolute;
+    } 
+
+    .img-desktop-container{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        position: relative;
+        width: 250px;
+        top: -100px;
+    }
+
+    .img-box{
+        display: none;
+    }
+
+    .faq{align-self: flex-start;
+        margin: 90px auto 0 30px;
+    }
+
+    .text-wrapper{
+        width: 250px;
+    }
+
+    .text-header{
+        align-self: center;
+    }
+
+    
+}
+
+
 
